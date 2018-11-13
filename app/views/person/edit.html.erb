@@ -1,0 +1,23 @@
+<h1>Edit Person</h1>
+<%= form_for @person do |p| %>
+    <%= p.label :name%>
+    <%= p.text_field :name%>
+
+    <%= p.label :age%>
+    <%= p.text_field :age%>
+    <br />
+    <br />
+    <%= p.label :hair_color%>
+    <%= p.text_field :hair_color%>
+
+    <%= p.label :eye_color%>
+    <%= p.text_field :eye_color%>
+    <br />
+    <br />
+    <%= p.label :gender%>
+    <%= p.text_field :gender%>
+
+    <%= p.label :alive%>
+    <%= p.text_field :alive%>
+    <%= p.submit%>
+<% end %>

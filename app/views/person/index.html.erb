@@ -2,6 +2,7 @@
 <% @persons.each do |person| %>
     <h2><%= person.name %></h2>
     <%= link_to 'View Record', person_path(person) %>
-    <%= link_to 'Edit', person_path(person) %>
+    <%= link_to 'Edit', edit_person_path(person.id) %>
     <%= link_to 'Delete', person, method: :destroy %> 
+    <%= link_to 'New', new_person_path(@persons.new)%>
 <% end %>
